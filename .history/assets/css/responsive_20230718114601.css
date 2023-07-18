@@ -1,0 +1,379 @@
+/* pc */
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: none;
+    }
+
+    .toggle-menu {
+        display: none;
+    }
+}
+
+/* tablet and mobile */
+@media screen and (max-width: 991px) {
+    .header-top {
+        position: relative;
+    }
+
+    .header-top .logo {
+        position: absolute;
+        left: 50%;
+        top: 8px;
+        transform: translateX(-50%);
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .toggle-menu svg {
+        width: 24px;
+        color: #666;
+    }
+
+    .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0 0 0 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: ease 0.3s;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #2b2828;
+        padding: 60px;
+        z-index: 2;
+        transform: translateX(-100%);
+    }
+
+    .menu-drawer ul {
+        margin-top: 70px;
+    }
+
+    .menu-drawer .show-on-mobile,
+    .menu-drawer .navbar__item {
+        margin-top: 20px;
+    }
+
+    .menu-drawer .log-in,
+    .menu-drawer .navbar__item a {
+        display: block;
+        color: #fff;
+        padding: 14px 0;
+        font-weight: 500;
+    }
+
+    .menu-drawer .logo {
+        position: absolute;
+        top: 70px;
+    }
+
+    .menu-checkbox:checked ~ .overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translate(0);
+    }
+
+    .hero__inner {
+        row-gap: 50px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero__heading {
+        width: 700px;
+    }
+
+    .hero__desc {
+        margin-top: 22px;
+        width: 600px;
+    }
+
+    .hero__row {
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 10px;
+    }
+
+    .hero__sdt {
+        display: inline-block;
+        width: 200px;
+    }
+
+    .hero__thumb {
+        margin-left: 0;
+    }
+
+    .hero__img {
+        width: 350px;
+        height: 550px;
+    }
+
+    .hero__img:first-child {
+        margin-right: -6px;
+    }
+
+    .hero__img:last-child {
+        width: 300px;
+        height: 450px;
+    }
+
+    .services__desc, .services__heading {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .services__desc {
+        width: 700px;
+    }
+
+    .services__row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .services__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .services__list {
+        margin-top: 30px;
+    }
+
+    .btn__services {
+        text-align: left;
+    }
+
+    .work__list {
+        column-gap: 20px;
+    }
+
+    .work-item {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .feature__inner {
+        flex-direction: column;
+    }
+
+    .feature__media {
+        margin-top: 50px;
+        order: 2;
+        width: 100%;
+    }
+
+    .members {
+        padding: 40px 0;
+    }
+
+    .install__heading {
+        font-size: 2rem;
+    }
+
+    .install__desc {
+        font-size: 1.6rem;
+    }
+
+    .install__info {
+        margin-left: 50px;
+    }
+
+    .news__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .news__content {
+        width: 100%;
+    }
+
+    .news__heading {
+        max-width: 700px;
+    }
+
+    .news__list {
+        margin-top: 50px;
+    }
+
+    .footer {
+        padding-top: 50px;
+    }
+
+    .footer__row {
+        column-gap: 30px;
+        grid-template-columns: 0.6fr 0.3fr 0.3fr 0.6fr;
+    }
+
+    .footer__desc {
+        width: 150px;
+    }
+
+    .footer-form__input {
+        width: 110px;
+    }
+
+    .footer-form__submit {
+        min-width: 30px;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+    .header-action__login {
+        display: none;
+    }
+
+    .header-top .logo {
+        display: none;
+    }
+
+    .hero__heading {
+        font-size: 4rem;
+        text-align: left;
+        width: 400px;
+    }
+
+    .hero__desc {
+        width: 400px;
+        text-align: left;
+    }
+
+    .hero__img {
+        width: 220px;
+        height: 400px;
+    }
+
+    .hero__img:last-child {
+        width: 170px;
+        height: 300px;
+    }
+
+    .appointment__heading,
+    .news__heading,
+    .members__heading,
+    .feature__heading,
+    .work__heading,
+    .services__heading {
+        text-align: left;
+        font-size: 3rem;
+    }
+
+    .services {
+        padding: 50px 0;
+    }
+
+    .services__desc {
+        width: 100%;
+        text-align: left;
+    }
+
+    .services__img {
+        width: 100%;
+    }
+
+    .services-item {
+        width: 100%;
+    }
+
+    .work__list {
+        grid-template-columns: 1fr;
+    }
+
+    .work__desc {
+        width: 100%;
+    }
+
+    .feature {
+        padding: 50px 0;
+    }
+
+    .feature__img {
+        width: 100%;
+    }
+
+    .feature__img:last-child {
+        bottom: -270px;
+        left: 0;
+    }
+
+    .members {
+        margin-top: 250px;
+    }
+
+    .members__header {
+        align-items: flex-start;
+    }
+
+    .members__list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .install {
+        margin-top: 80px;
+    }
+
+    .install__img {
+        display: none;
+    }
+
+    .install__info {
+        margin-left: 0;
+    }
+
+    .install__inner {
+        padding: 20px;
+    }
+
+    .news {
+        padding: 40px 0;
+    }
+
+    .appointment__inner {
+        padding: 40px 20px;
+    }
+
+    .appointment__heading::after {
+        left: 70px;
+    }
+
+    .appointment__desc {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    .footer__row {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .footer-form {
+        display: none;
+    }
+}
